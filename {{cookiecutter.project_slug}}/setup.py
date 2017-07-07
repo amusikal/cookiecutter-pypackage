@@ -18,7 +18,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 parsed_requirements = parse_requirements(
-    'requirements/prod.txt',
+    'requirements/production.txt',
     session=pip.download.PipSession()
 )
 
